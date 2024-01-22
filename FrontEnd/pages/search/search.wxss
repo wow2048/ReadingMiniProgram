@@ -1,0 +1,39 @@
+.intro {
+  height: 60rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  line-height: 60rpx;
+  padding: 30rpx;
+  border-left: 15rpx solid lightpink;
+}
+
+
+.book-item {
+  display: flex;
+  padding: 25rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 25rpx;
+  box-shadow: 1rpx 1rpx 15rpx #efefef;
+}
+
+.thumb image {
+  width: 180rpx;
+  height: 240rpx;
+  line-height: 240rpx;
+  display: block;
+  border-radius: 8rpx;
+  margin-right: 50rpx;
+}
+
+.info {
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.book-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}

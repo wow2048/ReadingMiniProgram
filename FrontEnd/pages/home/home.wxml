@@ -1,0 +1,39 @@
+<!-- 搜索栏 -->
+<view class="searchBar">
+  <input type="text" placeholder="搜索" confirm-type="search"	bindconfirm="navigateSearch"/>
+</view>
+
+<!-- 轮转图效果 -->
+<view class="homeSwiper" >
+<swiper indicator-dots circular>
+  <swiper-item>
+    <view class="swiper-image">
+      <image src="{{ swiperList[0].imgSrc }}" bindtap="navigateIntroduction"></image> 
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-image">
+      <image src="{{ swiperList[1].imgSrc }}" bindtap="navigateComputerBook"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-image">
+      <image src="{{ swiperList[2].imgSrc }}" bindtap="navigateClassicBook"></image>
+    </view>
+  </swiper-item>
+</swiper>
+</view>
+
+<!-- 猜你喜欢 -->
+<view class="intro">猜你喜欢</view>
+<!-- 猜你喜欢图书列表 -->
+<view class="book-item" wx:for="{{ bookList }}" bindtap="navigateBook" data-bookID="{{ item.bookID }}">
+  <view class="thumb">
+    <image src="{{ item.imageBase64 }}"></image>
+  </view>
+  <view class="info">
+    <text class="book-title">{{ item.name }}</text>
+    <text>作者： {{ item.author }}</text>
+    <text>出版社：{{ item.publisher }}</text>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/collection/collection",
+    "pages/user/user",
+    "pages/book/book",
+    "pages/search/search",
+    "pages/introdution/introdution",
+    "pages/computerBook/computerBook",
+    "pages/classicBook/classicBook"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffb6c1",
+    "navigationBarTitleText": "南哪读书",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "list": [{
+    "pagePath": "pages/home/home",
+    "text": "首页",
+    "iconPath": "images/tabs/home.png",
+    "selectedIconPath": "images/tabs/activehome.png"
+  },
+  {
+    "pagePath": "pages/collection/collection",
+    "text": "收藏",
+    "iconPath": "images/tabs/collection.png",
+    "selectedIconPath": "images/tabs/activecollection.png"
+  },
+  {
+    "pagePath": "pages/user/user",
+    "text": "我的",
+    "iconPath": "images/tabs/user.png",
+    "selectedIconPath": "images/tabs/activeuser.png"
+  }
+]
+},
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

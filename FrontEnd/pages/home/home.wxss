@@ -1,0 +1,74 @@
+/* pages/home/home.wxss */
+.searchBar {
+  height: 80rpx;
+  background-color: lightpink;
+}
+
+.searchBar input {
+  background-color: white;
+  text-align: center;
+  height: 60rpx;
+  border: 1px solid rgb(255, 182, 193);
+  border-radius: 15px;
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+}
+
+.homeSwiper swiper{
+  height: 375rpx;
+  margin: 10rpx;
+}
+
+.swiper-image {
+  height: 350rpx;
+  text-align: center;
+  padding: 15rpx;
+}
+
+.swiper-image image {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+
+
+.intro {
+  height: 60rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  line-height: 60rpx;
+  padding: 30rpx;
+  border-top: 1rpx solid #efefef;
+  border-left: 15rpx solid lightpink;
+}
+
+.book-item {
+  display: flex;
+  padding: 25rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 25rpx;
+  box-shadow: 1rpx 1rpx 15rpx #d4d3d3;
+}
+
+.thumb image {
+  width: 180rpx;
+  height: 240rpx;
+  line-height: 240rpx;
+  display: block;
+  border-radius: 8rpx;
+  margin-right: 50rpx;
+}
+
+.info {
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.book-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}

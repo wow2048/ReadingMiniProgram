@@ -1,0 +1,40 @@
+<view class="page">  
+    <view class="page__hd">
+        <view class="page__title">南哪读书</view>
+        <view class="page__desc">Introduction</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">用户指南</view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">1 首页</view>
+                    <view class="weui-article__p">
+                        首页轮播图点击可以进入到不同的页面。点击“Now Join US”海报可进入到用户指南说明页面。点击“计算机经典教材”海报可进入到计算机教材相关书单。点击“南京大学经典悦读”海报可以查看南京大学经典阅读计划相关丛书。
+                    </view>
+                    <view class="weui-article__p">
+                        “猜你喜欢”板块会精选10本图书，向用户进行推荐。
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">2 搜索</view>
+                    <view class="weui-article__p">
+                      首页顶部搜索栏输入搜索内容，确定输入后及自动跳转至搜索结果。搜索成功显示搜索到的书籍，搜索失败显示“未找到该书籍”。
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">3 图书信息</view>
+                    <view class="weui-article__p">
+                        在首页和收缩结果中，图书会以缩略图的形式展示信息。其中包括图书封面，图书名称，图书作者以及出版社的信息。点击图书会进入到图书详情页面。图书详情页面会展示更加详细的图书信息。其中包括图书封面，图书名称，图书作者、出版社、出版时间以及简介等信息。
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">4 收藏功能</view>
+                    <view class="weui-article__p">
+                        用户登录之后可以使用小程序里的图书收藏功能。用户可以在图书详情页面对该图书进行收藏。收藏后，用户可以在“收藏”页面中查看用户已经收藏的图书。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

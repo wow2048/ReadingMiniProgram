@@ -1,0 +1,48 @@
+<!--pages/book/book.wxml-->
+
+<!-- 书的上半部分，包含简单的信息、图片、收藏按钮 -->
+<view class="book-container">
+
+<!-- 遮罩效果 -->
+<view class="mask"> </view>
+<!-- 实现背景图片 -->
+<image class='background' src='{{bookImage}}' mode="aspectFill"></image>
+
+<!-- 书的简单信息 -->
+<view class="book-messge-container">
+  <text class="book-name">{{bookName}}</text>
+  <text>
+    <text class="book-begin-detail">作者 </text>
+    <text class="book-end-detail">{{writer}}</text>
+  </text>
+  <text>
+    <text class="book-begin-detail">出版社 </text>
+    <text class="book-end-detail">{{publisher}}</text>
+  </text>
+  <text>
+    <text class="book-begin-detail">出版日期 </text>
+    <text class="book-end-detail">{{publishDate}}</text>
+  </text>
+</view>
+<!-- 书的右半部分，由图片构成 -->
+<view class="book-image-container">
+  <!-- 书的图片 -->
+  <image src='{{bookImage}}' class="book-image"></image>
+  <!-- 收藏的图片与介绍文字 -->
+  <view class="collection-view" bindtap="collectingHandler">
+    <image wx:if="{{!isCollected}}" src="/images/love.png" class="collection-image"></image>
+    <image wx:elif="{{isCollected}}" src="/images/pink-love.png" class="collection-image"></image>
+    <text class="collection-text" space="ensp"> 收藏</text>
+  </view>
+</view>
+</view>
+
+<!-- 简介标题 -->
+<view class="book-brief-title">
+<text>简介</text>
+</view>
+
+<!-- 简介部分 -->
+<scroll-view class="book-brief">
+<text space="ensp">{{brief}}</text>
+</scroll-view>

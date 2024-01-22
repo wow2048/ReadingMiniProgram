@@ -1,0 +1,14 @@
+<!-- 我的收藏 -->
+<view class="intro">计算机类经典教材丛书</view>
+
+<!-- 展示收藏的图书 -->
+<view class="book-item" wx:for="{{ bookList }}" bindtap="navigateBook" data-bookID="{{ item.bookID }}">
+  <view class="thumb">
+    <image src="{{ item.imageBase64 }}"></image>
+  </view>
+  <view class="info">
+    <text class="book-title">{{ item.name }}</text>
+    <text>作者： {{ item.author }}</text>
+    <text>出版社：{{ item.publisher }}</text>
+  </view>
+</view>

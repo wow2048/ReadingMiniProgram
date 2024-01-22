@@ -1,0 +1,120 @@
+/* pages/book/book.wxss */
+
+/* 上半部分容器 */
+.book-container{
+  display: flex;
+  width: auto;
+  height: 512rpx;
+  border-bottom: 1rpx solid #979696;
+}
+
+/* 遮罩效果 */
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size:100% 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+/* 背景图片背景样式 */
+.background{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -2;
+  filter: blur(20rpx);
+}
+
+/* 书籍右侧容器样式 */
+.book-image-container{
+  margin-top: 20rpx;
+  padding-right: 30rpx;
+  padding-left: 60rpx;
+}
+
+/* 图片样式 */
+.book-image{
+  width: 240.5rpx;
+  height: 338rpx;
+  border-radius: 15rpx;
+}
+
+/* 收藏按钮容器样式 */
+.collection-view{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  border:1rpx solid lightpink;
+  border-radius: 50rpx;
+  padding-left: 25rpx;
+}
+
+/* 收藏的爱心图片样式 */
+.collection-image{
+  width: 75rpx;
+  height: 75rpx;
+}
+
+/* “收藏”文本所用样式 */
+.collection-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: lightpink;  
+  line-height: 75rpx;
+  height: 75rpx;
+}
+
+/* 书本信息容器样式 */
+.book-messge-container{
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 350rpx；
+}
+
+/* 书名样式 */
+.book-name{
+  font-weight: bold;
+  font-size: x-large;
+  color: white;
+}
+
+/* 介绍信息中前半部分样式 */
+.book-begin-detail{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: lightpink;
+}
+
+/* 介绍信息中后半部分样式 */
+.book-end-detail{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: medium;
+   color: white;
+   word-wrap: break-word;
+   word-break: break-all;
+   white-space: pre-line;
+}
+
+/* 简介标题样式 */
+.book-brief-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: lightpink;  
+  text-align: center;
+}
+
+/* 简介样式 */
+.book-brief{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5ch;
+  color: white;
+  text-align: left;
+  padding: 30rpx;
+  width: 94%;
+}
